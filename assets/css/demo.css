@@ -1,0 +1,6 @@
+.hero-image {
+  flex-grow: 1;
+  min-width: 320px;
+  max-width: 539px;
+  aspect-ratio: calc(539/410);
+}

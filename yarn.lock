@@ -1649,6 +1649,11 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
+"@twicpics/components@0.9.0-beta.0":
+  version "0.9.0-beta.0"
+  resolved "https://registry.yarnpkg.com/@twicpics/components/-/components-0.9.0-beta.0.tgz#4456b5433e46e98e45bffd7586eea788e772fbcb"
+  integrity sha512-+OuUExbNPydfMswfGn66Hq98GqTYIjF501GqqUx3SCazmeywA6Ir9Q6sBWymsIBzDnyPjqaePtrNUiLnWnaS3Q==
+
 "@types/anymatch@*":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@types/anymatch/-/anymatch-3.0.0.tgz#c95ff14401dbb2869913afac3935af4ad0d37f1a"

@@ -24,10 +24,17 @@
         </router-link>
       </template>
     </div>
-    <img
+    <!-- <img
       v-if="data.banner_image"
       :src="data.banner_image.url"
       :alt="data.banner_image.title"
+    /> -->
+    <BaseImage
+      v-if="data.banner_image"
+      :src="data.banner_image.url"
+      :alt="data.banner_image.title"
+      ratio="none"
+      class="hero-image"
     />
   </div>
 </template>

@@ -60,7 +60,9 @@ export default {
     ],
   },
 
-  css: [],
+  css: [
+    '~/assets/css/demo.css'
+  ],
 
   plugins: [],
 
@@ -71,7 +73,14 @@ export default {
     '@nuxtjs/eslint-module',
   ],
 
-  modules: ['@nuxtjs/axios', '@nuxtjs/pwa', '@nuxt/content', '@nuxtjs/robots', '@nuxtjs/router'],
+  modules: [
+    '@nuxtjs/axios', '@nuxtjs/pwa', '@nuxt/content', '@nuxtjs/robots', '@nuxtjs/router', 
+    '@twicpics/components/nuxt2'
+  ],
+
+  twicpics: {
+    domain: 'https://nuxt-contentstack-demo.twic.pics'
+  },
 
   robots: {
     UserAgent: '*',

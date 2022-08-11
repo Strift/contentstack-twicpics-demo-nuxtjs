@@ -9,3 +9,8 @@
   width: 100%;
   max-width: 540px;
 }
+
+/* this class existed but was unused */
+.blog-post-img {
+  width: 100%;
+}

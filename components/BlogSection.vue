@@ -9,11 +9,17 @@
     <div v-if="data" class="home-featured-blogs">
       <template v-for="index in data.featured_blogs">
         <div :key="index.titles" class="featured-blog">
-          <img
+          <BaseImage
+            :src="index.featured_image.url"
+            :alt="index.featured_image.title"
+            ratio="526/272"
+            class="blog-post-img"
+          />
+          <!-- <img
             :src="index.featured_image.url"
             class="blog-post-img"
             :alt="index.featured_image.title"
-          />
+          /> -->
           <div class="featured-content">
             <h3>{{ index.title }}</h3>
             <p v-html="index.body.slice(0, 255)"></p>

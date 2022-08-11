@@ -4,3 +4,8 @@
   max-width: 539px;
   aspect-ratio: calc(539/410);
 }
+
+.home-advisor-image {
+  width: 100%;
+  max-width: 540px;
+}

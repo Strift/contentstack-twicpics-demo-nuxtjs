@@ -1,7 +1,8 @@
 <template>
   <div v-if="data" class="home-advisor-section">
     <template v-if="data.image_alignment === 'Left'">
-      <img :src="data.image.url" :alt="data.image.filename" />
+      <BaseImage :src="data.image.url" :alt="data.image.filename" ratio="540/402" class="home-advisor-image" />
+      <!-- <img :src="data.image.url" :alt="data.image.filename" /> -->
       <div class="home-content">
         <h2>{{ data.title_h2 }}</h2>
         <p>
@@ -32,7 +33,8 @@
           {{ data.call_to_action.title }}
         </router-link>
       </div>
-      <img :src="data.image.url" :alt="data.image.filename" />
+      <BaseImage :src="data.image.url" :alt="data.image.filename" ratio="540/402" class="home-advisor-image" />
+      <!-- <img :src="data.image.url" :alt="data.image.filename" /> -->
     </template>
   </div>
 </template>

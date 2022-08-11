@@ -89,3 +89,5 @@ sw.*
 .vercel
 
 .env
+
+.vscode

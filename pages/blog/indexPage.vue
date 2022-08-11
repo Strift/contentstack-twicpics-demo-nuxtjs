@@ -14,11 +14,17 @@
         <template v-for="(list, index) in recentBlog">
           <div :key="index" class="blog-list">
             <NuxtLink :to="list.url">
-              <img
+              <BaseImage
                 alt="blog img"
                 class="blog-list-img"
                 :src="list.featured_image.url"
+                ratio="329/265"
               />
+              <!-- <img
+                alt="blog img"
+                class="blog-list-img"
+                :src="list.featured_image.url"
+              /> -->
             </NuxtLink>
             <div class="blog-content">
               <NuxtLink :to="list.url">

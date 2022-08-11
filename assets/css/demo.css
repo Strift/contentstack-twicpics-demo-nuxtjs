@@ -36,3 +36,13 @@
   width: 280px;
   /* border-radius: 999px; */
 }
+
+/*
+** Blog page
+*/
+
+.blog-list-img {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}

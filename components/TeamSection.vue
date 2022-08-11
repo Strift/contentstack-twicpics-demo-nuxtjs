@@ -9,7 +9,8 @@
     <div class="team-content">
       <template v-for="index in data.employees">
         <div :key="index.name" class="team-details">
-          <img :src="index.image.url" :alt="index.name" />
+          <BaseImage :src="index.image.url" :alt="index.name" ratio="7/9" class="team-image" />
+          <!-- <img :src="index.image.url" :alt="index.name" /> -->
           <div class="team-details">
             <h3>{{ index.name }}</h3>
             <p>{{ index.designation }}</p>

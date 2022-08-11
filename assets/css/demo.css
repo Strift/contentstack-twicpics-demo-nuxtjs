@@ -27,3 +27,12 @@
 .blog-post-img {
   width: 100%;
 }
+
+/*
+** About Us page
+*/
+
+.team-image {
+  width: 280px;
+  /* border-radius: 999px; */
+}

@@ -1,5 +1,5 @@
 <template>
-  <TwicImg :src="imageUrl" :alt="alt" mode="cover" :ratio="ratio"  />
+  <TwicImg :src="imageUrl" :alt="alt" mode="cover" v-bind="$attrs"  />
 </template>
 
 <script lang="ts">
@@ -12,10 +12,6 @@ export default Vue.extend({
       type: String
     },
     alt: {
-      required: true,
-      type: String
-    },
-    ratio: {
       required: true,
       type: String
     }

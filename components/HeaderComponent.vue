@@ -13,11 +13,17 @@
           :title="$store.state.header.title"
           to="/"
         >
-          <img
+          <BaseImage
+            :src="$store.state.header.logo.url"
+            :alt="$store.state.header.title"
+            ratio="130/26"
+            class="logo"
+          />
+          <!-- <img
             class="logo"
             :src="$store.state.header.logo.url"
             :alt="$store.state.header.title"
-          />
+          /> -->
         </NuxtLink>
       </div>
       <input id="menu-btn" type="checkbox" class="menu-btn" />

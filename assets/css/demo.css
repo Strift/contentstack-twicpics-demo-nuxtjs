@@ -1,3 +1,16 @@
+/*
+** Header
+*/
+
+/* this class was set but had no style */
+.logo {
+  width: 130px;
+}
+
+/*
+** Home page
+*/
+
 .hero-image {
   flex-grow: 1;
   min-width: 320px;
@@ -10,7 +23,7 @@
   max-width: 540px;
 }
 
-/* this class existed but was unused */
+/* this class was set but had no style */
 .blog-post-img {
   width: 100%;
 }

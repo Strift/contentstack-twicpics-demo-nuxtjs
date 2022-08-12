@@ -12,6 +12,8 @@
         <div>
           <h2>{{ author.title }}</h2>
           <p>{{ author.bio }}</p>
+          <div>
+          </div>
         </div>
       </div>
     </div>

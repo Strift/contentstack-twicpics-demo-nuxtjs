@@ -58,6 +58,7 @@ export default {
       if (referenceFieldPath) query.includeReference(referenceFieldPath)
       query
         .includeOwner()
+        .includeEmbeddedItems()
         .toJSON()
         .find()
         .then(

@@ -54,11 +54,11 @@ export default {
    */
   getEntries({ contentTypeUid, referenceFieldPath, jsonRtePath }) {
     return new Promise((resolve, reject) => {
-      const query = Stack.ContentType(contentTypeUid).Query()
+      const query = Stack.ContentType(contentTypeUid)
+        .includeEmbeddedItems().Query()
       if (referenceFieldPath) query.includeReference(referenceFieldPath)
       query
         .includeOwner()
-        .includeEmbeddedItems()
         .toJSON()
         .find()
         .then(

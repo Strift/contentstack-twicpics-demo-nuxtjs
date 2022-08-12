@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header v-if="$store.state.header" class="header">
     <template v-if="$store.state.header.notification_bar.show_announcement">
       <div class="note-div">
         <span v-html="$store.state.header.notification_bar.announcement_text" />

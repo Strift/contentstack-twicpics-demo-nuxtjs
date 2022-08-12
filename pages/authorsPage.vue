@@ -3,7 +3,12 @@
     <BlogBanner :data="bannerData" />
     <div class="authors-container">
       <div v-for="author in list" :key="author.uuid" class="author-card">
-        <BaseImage :src="author.picture.url" class="author-image" focus="auto" />
+        <BaseImage 
+          :src="author.picture.url" 
+          :alt="author.bio"
+          focus="auto" 
+          class="author-image" 
+        />
         <div>
           <h2>{{ author.title }}</h2>
           <p>{{ author.bio }}</p>

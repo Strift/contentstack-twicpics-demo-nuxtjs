@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer v-if="$store.state.footer">
     <div class="max-width footer-div">
       <div class="col-quarter">
         <NuxtLink

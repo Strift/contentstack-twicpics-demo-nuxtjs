@@ -46,3 +46,41 @@
   margin-top: auto;
   margin-bottom: auto;
 }
+
+/*
+** Authors page
+*/
+
+.authors-container {
+  margin: 53px auto 0 auto;
+  width: 1024px;
+}
+
+.author-card {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.author-card h2 {
+  margin-bottom: 1rem;
+}
+
+.author-image {
+  width: 300px;
+  flex-shrink: 0;
+  margin-right: 3rem;
+  --twic-ratio: calc(1);
+  --twic-mode: cover;
+}
+
+@media (min-width: 640px) {
+  .author-image {
+    --twic-ratio: calc(16/9);
+  }
+}
+
+@media (min-width: 1024px) {
+  .author-image {
+    --twic-ratio: calc(7/9);
+  }
+}

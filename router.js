@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './pages/indexPage.vue';
 import Blog from './pages/blog/indexPage.vue';
 import BlogPost from './pages/blog/_blog.vue';
+import Authors from './pages/authorsPage.vue';
 import NotFound from './layouts/ErrorLayout.vue';
 
 Vue.use(Router)
@@ -23,6 +24,10 @@ export function createRouter() {
       {
         path: '/blog/:slug',
         component: BlogPost,
+      },
+      {
+        path: '/authors',
+        component: Authors
       },
       {
         path: '/:page',
